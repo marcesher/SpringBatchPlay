@@ -11,6 +11,11 @@ println "T1 path: ${t1.absolutePath}; exists: ${t1.exists()}"
 beans {
     xmlns batch:"http://www.springframework.org/schema/batch"
 
+    jobLauncher(org.springframework.batch.core.launch.support.SimpleJobLauncher){
+        jobRepository = ref("jobRepository")
+        taskExecutor = bean(org.springframework.core.task.SimpleAsyncTaskExecutor)
+    }
+
     batch.job(id: 'simpleJob') {
         batch.step(id: 'logStart', next: 'tableOneStep') {
             batch.tasklet(ref: 'printStartMessage')

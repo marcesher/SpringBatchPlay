@@ -6,6 +6,8 @@ import org.springframework.batch.core.Job
 
 class BatchJobService {
 
+    static transactional = false
+
     def jobLauncher
     def simpleJob
 

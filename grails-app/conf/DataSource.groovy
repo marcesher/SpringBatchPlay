@@ -24,10 +24,11 @@ environments {
     test {
         dataSource {
             dbCreate = "update"
-            driverClassName = "net.sourceforge.jtds.jdbc.Driver"
+           /* driverClassName = "net.sourceforge.jtds.jdbc.Driver"
             url = "jdbc:jtds:sqlserver://localhost/SpringBatchPlay;user=sa;password=marc"
             username="sa"
-            password="marc"
+            password="marc"*/
+            url = "jdbc:h2:mem:devDb;MVCC=TRUE"
         }
     }
     production {
