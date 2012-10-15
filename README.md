@@ -8,7 +8,8 @@ It is a work in progress.
 
 Currently, I'm hitting a significant problem: if an error occurs during file reading -- for example, if the file ends with an empty line -- the execution thread hangs and the job gets stuck. In the stacktrace.log I see:
 
-```2012-10-15 08:14:36,017 [SimpleAsyncTaskExecutor-7] ERROR StackTrace  - Full Stack Trace:
+```
+2012-10-15 08:14:36,017 [SimpleAsyncTaskExecutor-7] ERROR StackTrace  - Full Stack Trace:
 java.lang.NumberFormatException: For input string: "1B"
 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.lang.Integer.parseInt(Integer.java:492)
@@ -21,14 +22,13 @@ java.lang.NumberFormatException: For input string: "1B"
 	at java.lang.Thread.run(Thread.java:722)
 ```
 
+
 ## Configuring and Running the Application
 
 First, props to John Rengleman (https://github.com/johnrengelman/grails-spring-batch) for the Spring Batch plugin and the sample project on which this is based.
 
 
-* From the grails shell, run the command
-```    create-batch-tables h2
-```
+* From the grails shell, run the command `create-batch-tables h2`
 
 * After that start the application (grails run-app), you will find it at http://localhost:8080/SpringBatchPlay/
 * Check db tables were created.  Go to dbconsole at http://localhost:8080/SpringBatchPlay/dbconsole/.
