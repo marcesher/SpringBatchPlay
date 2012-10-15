@@ -94,3 +94,7 @@ tomcat.deploy.username="grails"
 tomcat.deploy.password="grails"
 tomcat.deploy.url="http://localhost:8080/manager/text"
 tomcat.nio=true
+
+plugin.springBatch.jmx.enable = true
+//plugin.springBatch.loadTables = true
+plugin.springBatch.database = "h2"
