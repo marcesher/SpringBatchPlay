@@ -10,16 +10,21 @@ Currently, I'm hitting a significant problem: if an error occurs during file rea
 
 ```
 2012-10-15 08:14:36,017 [SimpleAsyncTaskExecutor-7] ERROR StackTrace  - Full Stack Trace:
-java.lang.NumberFormatException: For input string: "1B"
+org.springframework.batch.core.JobExecutionException: Flow execution ended unexpectedly
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.springframework.batch.core.job.flow.FlowExecutionException: Ended flow=simpleJob at state=simpleJob.logStart with exception
+	... 1 more
+Caused by: java.lang.NumberFormatException: For input string: "1B"
 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.lang.Integer.parseInt(Integer.java:492)
 	at java.lang.Integer.<init>(Integer.java:677)
 	at org.fusesource.jansi.AnsiOutputStream.write(AnsiOutputStream.java:114)
-....
+...
+	at org.apache.log4j.Category.log(Category.java:856)
 	at org.slf4j.impl.GrailsLog4jLoggerAdapter.logMessage(GrailsLog4jLoggerAdapter.java:191)
 	at org.slf4j.impl.GrailsLog4jLoggerAdapter.error(GrailsLog4jLoggerAdapter.java:166)
 	at org.apache.commons.logging.impl.SLF4JLog.error(SLF4JLog.java:213)
-	at java.lang.Thread.run(Thread.java:722)
+
 ```
 
 

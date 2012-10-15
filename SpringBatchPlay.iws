@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="743f6a23-e839-4bba-ba4a-0f1fdc47bb15" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpringBatchPlay.iws" afterPath="$PROJECT_DIR$/SpringBatchPlay.iws" />
     </list>
     <ignored path="SpringBatchPlay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -129,7 +130,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="64" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.4735605">
+            <state line="21" column="3" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.3043478">
               <folding />
             </state>
           </provider>
@@ -652,7 +653,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="64" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.4735605">
+        <state line="21" column="3" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.3043478">
           <folding />
         </state>
       </provider>
